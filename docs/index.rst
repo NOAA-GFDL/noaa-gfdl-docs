@@ -30,12 +30,12 @@ interpretation of atmospheric, oceanic, land and other Earth-system models.
     FRE CLI <https://noaa-gfdl.readthedocs.io/projects/fre-cli/>
 
 ***************************************
-:external+fre-cli:doc:`FRE CLI <index>`
+`FMS Runtime Environment (FRE) <https://noaa-gfdl.github.io/fre-cli/>`
 ***************************************
 
-:abbr:`FRE (FMS Runtime Environment)`, the :abbr:`FMS (Flexible Modeling
-System)` Runtime Environment, is a scientific workflow orchestration tool for
-running FMS-based long- and short-term forecast models.  The FRE :abbr:`CLI
-(Command Line Interface)` are the command line tools to create and manage
+FRE, the :abbr:`FMS (Flexible Modeling
+System)` Runtime Environment, is a scientific workflow orchestration toolset for
+running FMS-based long- and short-term forecast models.  FRE :abbr:`CLI
+(Command Line Interface)` are the command-line tools to create and manage
 FRE-based workflows.
 
