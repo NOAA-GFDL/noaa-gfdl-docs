@@ -1,0 +1,9 @@
+{
+    "terminal.integrated.defaultProfile.windows": "Command Prompt",
+    "esbonio.sphinx.confDir": "${workspaceFolder}/docs",
+    "files.trimTrailingWhitespace": true,
+    "rewrap.wrappingColumn": 79,
+    "makefile.configureOnOpen": true,
+    "cSpell.words": [
+    ],
+}
