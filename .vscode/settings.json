@@ -5,5 +5,10 @@
     "rewrap.wrappingColumn": 79,
     "makefile.configureOnOpen": true,
     "cSpell.words": [
+        "toctree"
     ],
+    "cSpell.ignorePaths": [
+        ".gitignore",
+        "docs/_static/css/*"
+    ]
 }

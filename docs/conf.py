@@ -12,7 +12,7 @@
 import datetime as dt
 import os
 import packaging.version
-import sphinx_rtd_theme
+import sphinx_rtd_theme    # type: ignore
 
 project = "NOAA GFDL Documentation"
 copyright = f"{dt.datetime.now().year}, NOAA GFDL"
@@ -21,6 +21,7 @@ author = "NOAA GFDL"
 # -- General configuration ---------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#general-configuration
 extensions = [
+    "sphinx.ext.intersphinx",
     "sphinx_rtd_theme",
 ]
 
@@ -88,3 +89,16 @@ if (packaging.version.Version(sphinx_rtd_theme.__version__) >=
     packaging.version.Version("2.1.0")):
     html_theme_options["flyout_display"] = "hidden"
 
+# Sphinx Intersphinx configuration -------------------------------------------
+# https://www.sphinx-doc.org/en/master/usage/extensions/intersphinx.html
+intersphinx_mapping = {
+    "fre-cli": ("https://noaa-gfdl.readthedocs.io/projects/fre-cli/en/latest", None),
+}
+
+# Sphinx defaults to automatically resolve *unresolved* labels using all your
+# Intersphinx mappings. This behavior has unintended side-effects, namely that
+# documentations local references can suddenly resolve to an external location.
+#
+# See also:
+# https://www.sphinx-doc.org/en/master/usage/extensions/intersphinx.html#confval-intersphinx_disabled_reftypes
+intersphinx_disabled_reftypes = ["*"]
